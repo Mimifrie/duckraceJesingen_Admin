@@ -1,0 +1,14 @@
+<!-- Abschnitt für die Eingabe des API-Keys -->
+<div *ngIf="!isApiKeyEntered">
+  <h1>Bitte API Key eingeben:</h1>
+  <input type="text" [(ngModel)]="apiKey">
+  <button (click)="setApiKey()">API Key senden</button>
+</div>
+
+<!-- Abschnitt für die Eingabe der Entennummer -->
+<div *ngIf="isApiKeyEntered">
+  <h1>Entenrennen-Admin</h1>
+  <p *ngIf="message">{{message}}</p>
+  <input type="number" [(ngModel)]="duckNumber">
+  <button (click)="sendDuckData()">Senden</button>
+</div>

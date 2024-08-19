@@ -1,0 +1,7 @@
+{
+    "/duckraceJesingen": {
+      "target": "https://h2918194.stratoserver.net:8443",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
